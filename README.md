@@ -5,3 +5,5 @@ Desarrollo de un ChatBot en la plataforma Telegram para guiar a usuarios nuevos 
 
 Desarrolladores
 	-Rosales Ramirez Bryan Yair 
+	-Martinez Arriaga Reyes Manuel
+	-Gonzalez Romualdo Jessica 
