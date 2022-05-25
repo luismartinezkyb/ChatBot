@@ -77,7 +77,7 @@ def Innova_TecNM(update, context):
 
 
 def main():
-    updater = Updater('TOKEN', use_context=True)
+    updater = Updater('5355902687:AAFfQtANKiNyGc7bd8QIy98Qz8dURToJ-mw', use_context=True)
     dp = updater.dispatcher
 
     # Eventos que activarán nuestro bot.
