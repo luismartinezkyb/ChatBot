@@ -1,1 +1,1 @@
-web: python lincebot.py
+worker: python3 lincebot.py
