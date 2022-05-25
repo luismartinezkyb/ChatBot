@@ -17,7 +17,7 @@ def helpMe(update, context):
 	--> /sistemas \n
 	--> /Centro_de_Idiomas \n
 	--> /Departamento_de_ingeniería_Industrial \n
-	--> /Edificio_de_Gestión_y_Vinculación \n
+	--> /vinculación \n
 	--> /Aulas_Ingeniería_Industrial_B \n
 	--> /Edificio_Ingeniería_Industrial \n
 	--> /Cafetería \n
@@ -30,7 +30,7 @@ def helpMe(update, context):
 def sistemas(update, context):
     context.bot.sendVideo(chat_id=update.message['chat']['id'], video=open(
         'prueba.png', 'rb'), filename='about.png', caption='Hola, te envio este video, miralo!')
-
+    
 
 def Centro_de_Idiomas(update, context):
     context.bot.sendVideo(chat_id=update.message['chat']['id'], video=open(
@@ -42,10 +42,9 @@ def Departamento_de_ingeniería_Industrial(update, context):
         'prueba.png', 'rb'), filename='about.png', caption='Hola, te envio este video, miralo!')
 
 
-def Edificio_de_Gestión_y_Vinculación(update, context):
+def vinculacion(update, context):
     context.bot.sendVideo(chat_id=update.message['chat']['id'], video=open(
-        'prueba.png', 'rb'), filename='about.png', caption='Hola, te envio este video, miralo!')
-
+        'vinculacion.jpg', 'rb'), filename='about.png', caption='Hola, te envio este video, miralo!')
 
 def Aulas_Ingeniería_Industrial_B(update, context):
     context.bot.sendVideo(chat_id=update.message['chat']['id'], video=open(
@@ -78,8 +77,7 @@ def Innova_TecNM(update, context):
 
 
 def main():
-    TOKEN = "5355902687:AAFfQtANKiNyGc7bd8QIy98Qz8dURToJ-mw"
-    updater = Updater(TOKEN, use_context=True)
+    updater = Updater('TOKEN', use_context=True)
     dp = updater.dispatcher
 
     # Eventos que activarán nuestro bot.
@@ -87,6 +85,7 @@ def main():
     dp.add_handler(CommandHandler('helpMe',	helpMe))
     dp.add_handler(CommandHandler('Edificio_sistemas', sistemas))
     dp.add_handler(CommandHandler('Centro_de_Idiomas', Centro_de_Idiomas))
+    dp.add_handler(CommandHandler('vinculacion', vinculacion))
     # dp.add_handler(CommandHandler(
     # 'Edificio_de_Gestión_y_Vinculación', Edificio_de_Gestión_y_Vinculación))
     # dp.add_handler(CommandHandler(
